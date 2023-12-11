@@ -1,6 +1,6 @@
 const { beforeAll } = require('jest-circus')
 const todoList=require('../todo')
-const {all,markAsComplete,add}=todoList()
+const {all,markAsComplete,add,overdue,duetoday,duelater}=todoList()
 describe("Todolist Test Suite",()=>{
   beforeAll(() =>{
     add(
