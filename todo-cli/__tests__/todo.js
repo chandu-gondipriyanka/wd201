@@ -1,11 +1,11 @@
 const { beforeAll } = require('jest-circus')
 const todoList=require('../todo')
-const {all,markAsComplete,add,overdue,duetoday,duelater}=todoList()
+const {all,markAsComplete,add}=todoList()
 describe("Todolist Test Suite",()=>{
   beforeAll(() =>{
     add(
       {
-        title:"Test todo",
+        title:"new todo",
         completed:false,
         dueDate:new Date().toLocaleDateString("en-CA")
       }
