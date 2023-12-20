@@ -67,7 +67,7 @@ describe("todoList", () => {
     add({
         title: "todoo2",
         completed: false,
-        dueDate: new Date(today.getTime() + 2 * oneDay)
+        dueDate: new Date(today.getTime() + 2 * oneDa)
         .toISOString()
         .slice(0, 10),
       });
